@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+/*
+Theme Name: 	Sepe Caxias
+Theme URI: 		http://sepecaxias.org.br/
+Description: 	Tema desenvolvido para o Núcleo de Duque de Caxias do Sindicato Estadual dos Profissionais de Educação do Rio de Janeiro
+Author:			Physistec - Design & Desenvolvimento
+Author URI:		http://physistec.com.br
+Version: 		1.0 (Beta)
+License: 		GNU General Public License v2 or later
+License 		URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 			white, one-column, two-columns, flexible-width, custom-header, custom-menu, full-width-template, theme-options
+Text Domain: 	sepecaxias
+
+Este tema, como WordPress, está licenciado sob a GPL. 
+Use-o para fazer algo legal, se divertir, e compartilhar o que você aprendeu com os outros.
+*/
+
+/* CSS Document */
+
+@import url("css/geral.css");
