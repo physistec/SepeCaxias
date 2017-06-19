@@ -95,7 +95,7 @@
 		<div class="header-main">
 			<div class="rsociais">
 				<ul>
-					<li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/pages/Sepe-Caxias/161300497262784" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/sepecaxias" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				</ul>
 			</div>
 
