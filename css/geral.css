@@ -1391,6 +1391,11 @@ a.post-thumbnail:hover {
 	margin: 48px 0;
 }
 
+.paging-navigation .screen-reader-text,
+.post-navigation .screen-reader-text {
+    display: none;
+}
+
 .paging-navigation .loop-pagination {
 	margin-top: -5px;
 	text-align: center;
