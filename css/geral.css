@@ -639,6 +639,7 @@ article {
 
 #featured-thumbnail .wp-post-image {
 	height: 162px;
+	width: 100%;
 }
 
 article header {
