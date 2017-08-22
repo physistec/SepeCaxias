@@ -361,7 +361,7 @@ body {
 
 /* Main */
 .site-main {
-	margin: -10px auto 140px;
+	margin: 0 auto 140px;
 	padding: 20px 15px 40px;
 	display: block;
 	width: 100%;
@@ -1852,7 +1852,7 @@ a.post-thumbnail:hover {
 #secondary {
 	clear: both;
 	color: rgba(0, 0, 0, 0.7);
-	margin-top: -1px;
+	margin-top: 0;
 	padding: 0 10px;
 	position: relative;
 	z-index: 2;
@@ -1867,7 +1867,7 @@ a.post-thumbnail:hover {
 
 /* Primary Sidebar */
 .primary-sidebar {
-	padding-top: 48px;
+	padding-top: 30px;
 }
 
 .secondary-navigation + .primary-sidebar {
