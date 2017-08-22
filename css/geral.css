@@ -3,7 +3,7 @@
 @import url("font-awesome.min.css");
 @import url("bootstrap-social.css");
 @import url("bootstrap.min.css");
-/*@import url("bootstrap-theme.min.css");*/
+@import url("bootstrap-theme.min.css");
 
 /* Trick the WordPress Theme Bot *Evil* */
 .aligncenter	{ display:block; margin:0 auto !important; }
