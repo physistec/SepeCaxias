@@ -191,6 +191,17 @@ function sepecaxias_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar([
+		'name'          => __('Documentos', 'sepecaxias'),
+		'id'            => 'sidebar-documents',
+		'description' => __( 'Área reservada para submenu documentos.', 'textdomain' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	]);
+
 }
 
 add_action( 'widgets_init', 'sepecaxias_widgets_init' );
