@@ -1,12 +1,12 @@
 @import url("reset.css");
-@import url("repeatable-patterns.css");
+/*@import url("repeatable-patterns.css");*/
 @import url("font-awesome.min.css");
 @import url("bootstrap-social.css");
 @import url("bootstrap.min.css");
-@import url("bootstrap-theme.min.css");
+/*@import url("bootstrap-theme.min.css");*/
 
 /* Trick the WordPress Theme Bot *Evil* */
-.aligncenter{ display:block; margin:0 auto !important; }
+.aligncenter	{ display:block; margin:0 auto !important; }
 .alignright	{ float:right; margin:0 0 1em 1em; }
 .alignleft	{ float:left; margin:0 1em 1em 0; }
 .floatleft	{ float:left; }
@@ -27,7 +27,7 @@
 
 a:link, a:visited, a:active { text-decoration: none; }
 
-/* CSS Grids */
+/* CSS Grids 
 .row, .column { box-sizing: border-box; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
@@ -54,7 +54,7 @@ a:link, a:visited, a:active { text-decoration: none; }
   }
  
   .column + .column { margin-left: 0; }
-}
+}*/
 
 /* Clear */
 #clear { clear:both; display:block; }
@@ -166,7 +166,6 @@ body {
 
 .site-header {
 	margin: 0 auto;
-	/*margin-bottom: 10px;*/
 	position: relative;
 	width: 100%;
 	background: #fff url('../images/topo.jpg') no-repeat center center;
@@ -259,7 +258,7 @@ body {
 
 .navbar {
 	width: 100%;
-	max-width: 940px;
+	max-width: 970px;
 	height: 50px;
 }
 
@@ -323,14 +322,18 @@ body {
 }
 
 /* Slider */
-.slider-home { margin-bottom:10px; background-color: #333; width:100%; }
+.slider-home { background-color: #333; width:100%; }
 #slider { 
-	margin: 0 auto 10px;
-	padding: 10px;
+	margin: 0 auto;
+	padding: 0;
 	display: block;
-	max-width: 940px;
+	max-width: 970px;
+	min-height: 380px;
 }
 
+.flexslider {
+    margin: 0 !important;
+}
 .flexslider-title {
 	display: none;
 }
@@ -358,12 +361,12 @@ body {
 
 /* Main */
 .site-main {
-	margin: 0 auto 160px;
-	padding: 0;
+	margin: -10px auto 140px;
+	padding: 20px 15px 40px;
 	display: block;
 	width: 100%;
-	max-width: 940px;
-	background: #fff url('../images/conteudo_bkg.png') repeat;
+	max-width: 970px;
+	background: #fff /*url('../images/conteudo_bkg.png')*/ repeat;
 }
 
 .hentry {
@@ -729,6 +732,9 @@ article header {
 .avisos,
 .fanpage {
 	border-bottom: 0;
+}
+.avisos article {
+	padding: 10px;
 }
 
 .contador {
@@ -1393,7 +1399,7 @@ a.post-thumbnail:hover {
 
 .paging-navigation .screen-reader-text,
 .post-navigation .screen-reader-text {
-    display: none;
+	display: none;
 }
 
 .paging-navigation .loop-pagination {

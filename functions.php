@@ -546,11 +546,10 @@ add_action( 'widgets_init', 'sepecaxias_widgets_init' );
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-/* ==============================================================================
-								PhT Carrossel
-   ============================================================================== */
+/**
+ * PhT Carrossel - Adicionar "Custom Post Type" para Carrossel de Cartazes
+ */
 
-/** Adicionar "Custom Post Type" para Carrossel de Cartazes **/
 function register_pht_cartaz() {
 	register_post_type( 'cartaz' ,
 		array(	

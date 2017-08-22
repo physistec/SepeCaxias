@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<div class="videos">
 					<div id="secondary">
 						<?php if ( is_active_sidebar( 'sidebar-videos' ) ) : ?>
@@ -47,7 +47,7 @@
 				</div><!-- .videos -->
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<div class="imagem">
 					<div id="secondary">
 						<?php if ( is_active_sidebar( 'sidebar-imagem' ) ) : ?>
@@ -57,8 +57,6 @@
 						<?php endif; ?>
 					</div><!-- #secondary -->
 				</div><!-- .imagem -->
-				<!--div class="alame"><a href="<?php echo site_url(); ?>/alexandre-abandonou-minha-escola" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/campanhas/alame_top.jpg" title="Alexandre abandonou minha escola" /></a></div-->
-
 			</div>
 		</div>
 
@@ -68,7 +66,7 @@
 
 	   			<h1 class="cat-tit"><i class="fa fa-newspaper-o"></i> Notícias</h1>
 				<?php
-				query_posts('&cat=5&posts_per_page=4');
+				query_posts('&cat=5&posts_per_page=5');
 				if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<article class="post excerpt">
 						<?php if ( has_post_thumbnail() ) { ?>
