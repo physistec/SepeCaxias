@@ -1,0 +1,24 @@
+# Distribution Files
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+*.txt
+
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE & Editors
+.vscode
+
+# Debug log
+*.log
+
+node_modules
+src
+vendor
+versao_ant
