@@ -1,9 +1,3 @@
-    <div id="clear"></div>
-    
-    <div id="toTop" style="display: none;"><i class="fa fa-chevron-circle-up"></i></div>
-
-    </section><!-- #main -->
-
     <footer class="site-footer" role="contentinfo">
 
         <?php if (has_nav_menu('secondary')) : ?>
@@ -11,9 +5,7 @@
             <?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
         </nav>
         <?php endif; ?>
-
-        <?php get_sidebar('sidebar-3'); ?>
-
+        
         <div class="site-info">
             <p><?php echo date("Y");?> &copy; SEPE Caxias - Sindicato Estadual dos Profissionais de Educação do RJ - Rua Conde Porto Alegre, 131<br />
             Vinte e Cinco de Agosto - Duque de Caxias - RJ - CEP 25070-350 - (21)2671-1709</p>

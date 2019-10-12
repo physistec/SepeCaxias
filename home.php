@@ -1,4 +1,4 @@
-    <?php get_header(); ?>
+<?php get_header(); ?>
 
     <div id="clear"></div>
 
@@ -131,16 +131,15 @@
         
             <div class="fanpage">
                 <h1 class="cat-tit"><i class="fa fa-facebook"></i> Curta nossa página</h1>
-            <br />
-            <div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=2395373317370502&autoLogAppEvents=1"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/sepecaxias/" data-tabs="" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sepecaxias/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sepecaxias/">Sepe-Caxias</a></blockquote></div>
+                <br />
+                <div class="fb-page" data-href="https://www.facebook.com/sepecaxias/" data-tabs="" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sepecaxias/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sepecaxias/">Sepe-Caxias</a></blockquote></div>
+            </div>
 
-            <h1 class="cat-tit floatleft"><i class="fa fa-users"></i> Visitas</h1><div class="contador alignright"><?php // echo do_shortcode("[CPD_VISITORS_TOTAL]"); ?></div>
+            <!--h1 class="cat-tit floatleft"><i class="fa fa-users"></i> Visitas</h1><div class="contador alignright"><?php // echo do_shortcode("[CPD_VISITORS_TOTAL]"); ?></div-->
             
             <?php get_template_part('sidebar', 'none'); ?>
 
-           </div><!-- .col_direita -->
+        </div><!-- .col_direita -->
 
         <div class="artigos">
             <h1 class="cat-tit"><i class="fa fa-book"></i> Artigos</h1>
@@ -179,5 +178,12 @@
         </div>
 
     </aside><!-- #conteudo .site-content -->
-    
-    <?php get_footer(); ?>
+ 
+    <div id="clear"></div>
+
+    <div id="toTop" style="display: none;"><i class="fa fa-chevron-circle-up"></i></div>
+
+</section><!-- #main -->
+
+<?php get_template_part('sidebar', 'footer'); ?>    
+<?php get_footer(); ?>
