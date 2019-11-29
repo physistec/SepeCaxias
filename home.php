@@ -66,8 +66,14 @@
 
                    <h1 class="cat-tit"><i class="fa fa-newspaper-o"></i> Notícias</h1>
                 <?php
-                query_posts('&cat=5&posts_per_page=5');
-                if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+                $query_noticias = new WP_Query( array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => array('noticias'),
+                    'posts_per_page' => 5
+                    )
+                );
+                if ( $query_noticias->have_posts() ) : while ( $query_noticias->have_posts() ) :  $query_noticias->the_post(); ?>
                     <article class="post excerpt">
                         <?php if (has_post_thumbnail() ) { ?>
                             <a id="featured-thumbnail" href="<?php the_permalink(); ?>" rel="nofollow">
@@ -108,8 +114,14 @@
              <div class="avisos box_round">
                 <h1 class="cat-tit" style="margin-top: 1px;"><i class="fa fa-thumb-tack"></i> Avisos</h1>
                 <?php
-                query_posts('&cat=10&posts_per_page=4');
-                if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+                $query_avisos = new WP_Query( array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => array('avisos'),
+                    'posts_per_page' => 4
+                    )
+                );
+                if ( $query_avisos->have_posts() ) : while ( $query_avisos->have_posts() ) :  $query_avisos->the_post(); ?>
                     <article class="post excerpt">
                         <header>
                             <h2 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
@@ -132,7 +144,7 @@
             <div class="fanpage">
                 <h1 class="cat-tit"><i class="fa fa-facebook"></i> Curta nossa página</h1>
                 <br />
-                <div class="fb-page" data-href="https://www.facebook.com/sepecaxias/" data-tabs="" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sepecaxias/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sepecaxias/">Sepe-Caxias</a></blockquote></div>
+                <div class="fb-page" data-href="https://www.facebook.com/sepecaxias/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sepecaxias/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sepecaxias/">Sepe Caxias</a></blockquote></div>
             </div>
 
             <!--h1 class="cat-tit floatleft"><i class="fa fa-users"></i> Visitas</h1><div class="contador alignright"><?php // echo do_shortcode("[CPD_VISITORS_TOTAL]"); ?></div-->
@@ -145,8 +157,14 @@
             <h1 class="cat-tit"><i class="fa fa-book"></i> Artigos</h1>
             <ul class="colunas">
                 <?php
-                query_posts('&cat=6&posts_per_page=10');
-                if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+                $query_artigos = new WP_Query( array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => array('artigos'),
+                    'posts_per_page' => 10
+                    )
+                );
+                if ( $query_artigos->have_posts() ) : while ( $query_artigos->have_posts() ) :  $query_artigos->the_post(); ?>
                     <li class="post">
                         <header>
                             <h2 class="title"><i class="fa fa-file-text-o" style="color: #fff;"></i>&nbsp;&nbsp;<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>

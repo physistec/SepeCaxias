@@ -91,27 +91,8 @@
 
 <body <?php body_class(); ?> role="document">
 
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-            appId            : '239537331737050',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v4.0'
-            });
-        };
-
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/pt_BR/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        FB.AppEvents.logPageView();
-    </script>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=2395373317370502&autoLogAppEvents=1"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&autoLogAppEvents=1&version=v5.0&appId=2395373317370502"></script>
     <header id="masthead" class="site-header" role="banner">
         <div class="header-main">
             <div class="rsociais">
