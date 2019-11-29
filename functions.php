@@ -242,7 +242,7 @@ function sepecaxias_scripts() {
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'sepecaxias-style', get_stylesheet_uri(), array( 'genericons' ) );
+	//wp_enqueue_style( 'sepecaxias-style', get_stylesheet_uri(), array( 'genericons' ) );
 
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'sepecaxias-ie', get_template_directory_uri() . '/css/ie.css', array( 'sepecaxias-style', 'genericons' ), '20131205' );
